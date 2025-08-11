@@ -2,6 +2,7 @@
   "name": "talking-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aarushpraka.github.io/talking-web",
   "dependencies": {
     "@stripe/react-stripe-js": "^3.9.0",
     "@stripe/stripe-js": "^7.8.0",
@@ -28,6 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
