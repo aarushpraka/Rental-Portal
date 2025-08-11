@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../talking"
+		},
+		{
+			"path": "../../../../talking_app"
+		},
+		{
+			"path": "../../../../talking-server"
+		},
+		{
+			"path": "../../.."
+		}
+	]
+}

@@ -1,0 +1,227 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    animation: fadeInBody 1s ease;
+    overflow-x: hidden;
+}
+
+@keyframes fadeInBody {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 36px;
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    animation: fadeInCard 0.8s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.welcome-msg {
+    text-align: center;
+    color: #ddd;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.error-box {
+    background-color: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #e0e0e0;
+    display: block;
+}
+
+.input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.input-icon input {
+    width: 100%;
+    padding: 12px 44px 12px 44px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.input-icon input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.input-icon input:focus {
+    outline: none;
+    border-color: #a29bfe;
+    box-shadow: 0 0 0 2px rgba(162, 155, 254, 0.3);
+}
+
+.icon-left {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-left: 44px;
+    padding-right: 44px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #fff;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.forgot-link {
+    color: #a8d8ff;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+    position: relative;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+}
+
+.login-btn:disabled {
+    background-color: #4d4d6f;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 28px 20px;
+    }
+    .app-title {
+        font-size: 1.6rem;
+    }
+    .welcome-msg {
+        font-size: 0.95rem;
+    }
+    .input-icon input {
+        padding-left: 44px;
+        font-size: 14px;
+    }
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .login-btn {
+        padding: 12px;
+        font-size: 15px;
+    }
+    .error-box {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

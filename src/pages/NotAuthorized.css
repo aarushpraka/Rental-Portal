@@ -1,0 +1,33 @@
+.not-auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+.not-auth-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.return-link {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.return-link:hover {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+}
